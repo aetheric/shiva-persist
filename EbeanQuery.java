@@ -1,4 +1,5 @@
-public abstract class EbeanQuery<ResultType> extends Query<ResultType> {
+public abstract class EbeanQuery<ResultType>
+		extends Query<ResultType> {
 
 	protected ExpressionList<ResultType> expressionList;
 

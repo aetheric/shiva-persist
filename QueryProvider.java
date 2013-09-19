@@ -1,5 +1,5 @@
 public interface QueryProvider<QueryType extends Query<ResultType>, ResultType> {
 
-	public QueryType query();
+	public QueryType getQuery();
 
 }
