@@ -1,0 +1,30 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+
+	<parent>
+		<groupId>nz.co.aetheric.shiva</groupId>
+		<artifactId>shiva-parent</artifactId>
+		<version>1.1.0</version>
+	</parent>
+
+	<artifactId>shiva-persist-parent</artifactId>
+	<version>1.1.0-SNAPSHOT</version>
+	<packaging>pom</packaging>
+
+	<name>Shiva Persistence: Parent</name>
+	<description>The parent POM for the shiva-persist project</description>
+	<url>https://github.com/aetheric/shiva-persist/tree/shiva-persist-parent</url>
+
+	<issueManagement>
+		<system>github</system>
+		<url>https://github.com/aetheric/shiva-persist/issues</url>
+	</issueManagement>
+
+	<scm>
+		<url>https://github.com/aetheric/shiva-persist</url>
+		<connection>git://github.com/aetheric/shiva-persist.git</connection>
+		<developerConnection>git@github.com:aetheric/shiva-persist.git</developerConnection>
+		<tag>shiva-persist-parent</tag>
+	</scm>
+
+</project>

@@ -1,4 +1,5 @@
-shiva-persist
-=============
+# Shiva Persistence: Parent
 
-A persistence segregation API
+This is simply the Maven parent POM for the project.
+
+Not really much to tell yet.
