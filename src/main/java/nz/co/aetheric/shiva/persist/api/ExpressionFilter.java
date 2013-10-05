@@ -1,3 +1,7 @@
+package nz.co.aetheric.shiva.persist.api;
+
+import java.util.Map;
+
 /**
  * Not so sure on this one. While it would be nice to have a standardised way of defining filters, Java doesn't deal
  * with Maps nearly as well as Groovy, making it a bad choice for easily passing arguments. The alternate way around

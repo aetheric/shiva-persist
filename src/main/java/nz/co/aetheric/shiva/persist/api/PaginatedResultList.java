@@ -1,3 +1,7 @@
+package nz.co.aetheric.shiva.persist.api;
+
+import java.util.List;
+
 public class PaginatedResultList<ResultType> {
 	private final List<ResultType> results;
 	private final int total;
