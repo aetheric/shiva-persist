@@ -4,7 +4,7 @@
 	<parent>
 		<groupId>nz.co.aetheric.shiva</groupId>
 		<artifactId>shiva-persist-parent</artifactId>
-		<version>1.0.0</version>
+		<version>1.1.0</version>
 	</parent>
 
 	<artifactId>shiva-persist</artifactId>
@@ -13,7 +13,7 @@
 
 	<name>Shiva Persistence</name>
 	<description>A persistence segregation API</description>
-	<url>https://github.com/aetheric/shiva-persist</url>
+	<url>https://github.com/aetheric/shiva-persist/tree/master</url>
 
 	<modules>
 		<module>shiva-persist-parent</module>
@@ -21,15 +21,8 @@
 		<module>shiva-persist-ebean</module>
 	</modules>
 
-	<issueManagement>
-		<system>github</system>
-		<url>https://github.com/aetheric/shiva-persist/issues</url>
-	</issueManagement>
-
 	<scm>
-		<url>https://github.com/aetheric/shiva-persist</url>
-		<connection>git://github.com/aetheric/shiva-persist.git</connection>
-		<developerConnection>git@github.com:aetheric/shiva-persist.git</developerConnection>
+		<tag>master</tag>
 	</scm>
 
 </project>
