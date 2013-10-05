@@ -1,4 +1,3 @@
-shiva-persist
-=============
+# Shiva Persistence API
 
-A persistence segregation API
+This module's purpose is to define the interfaces needed to understand and document more specific implementations.
