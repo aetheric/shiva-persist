@@ -1,3 +1,7 @@
+package nz.co.aetheric.shiva.persist.ebean;
+
+import nz.co.aetheric.shiva.persist.api.QueryProvider;
+
 public abstract class EbeanQueryProvider<QueryType extends EbeanQuery, ResultType>
 		implements QueryProvider<QueryType, ResultType> {
 	

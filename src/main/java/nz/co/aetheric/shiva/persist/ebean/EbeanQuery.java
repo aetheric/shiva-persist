@@ -1,3 +1,9 @@
+package nz.co.aetheric.shiva.persist.ebean;
+
+import java.util.List;
+import nz.co.aetheric.shiva.persist.api.Query;
+import nz.co.aetheric.shiva.persist.api.PaginatedResultList;
+
 public abstract class EbeanQuery<ResultType>
 		extends Query<ResultType> {
 
