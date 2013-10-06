@@ -5,6 +5,7 @@ package nz.co.aetheric.shiva.persist.api.types;
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
 public interface Enableable {
+	public static final String FIELD_ENABLED = "enabled";
 
 	public Boolean isEnabled();
 

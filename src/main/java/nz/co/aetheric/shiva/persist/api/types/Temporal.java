@@ -7,6 +7,8 @@ import java.util.Calendar;
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
 public interface Temporal {
+	public static final String FIELD_DATE_CREATED = "dateCreated";
+	public static final String FIELD_LAST_UPDATED = "lastUpdated";
 
 	public Calendar getDateCreated();
 

@@ -7,6 +7,7 @@ import java.io.Serializable;
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
 public interface Identifiable<IdentityType extends Serializable> {
+	public static final String FIELD_ID = "id";
 
 	public IdentityType getId();
 
