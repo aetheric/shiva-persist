@@ -7,6 +7,7 @@
 		<version>1.1.0</version>
 	</parent>
 
+	<groupId>nz.co.aetheric.shiva.persist</groupId>
 	<artifactId>shiva-persist-parent</artifactId>
 	<version>1.1.0-SNAPSHOT</version>
 	<packaging>pom</packaging>
@@ -14,24 +15,6 @@
 	<name>Shiva Persistence: Parent</name>
 	<description>The parent POM for the shiva-persist project</description>
 	<url>https://github.com/aetheric/shiva-persist/tree/shiva-persist-parent</url>
-
-	<dependencyManagement>
-		<dependencies>
-
-			<dependency>
-				<groupId>nz.co.aetheric.shiva.persist</groupId>
-				<artifactId>shiva-persist-api</artifactId>
-				<version>[1.1,1.2)</version>
-			</dependency>
-
-			<dependency>
-				<groupId>nz.co.aetheric.shiva.persist</groupId>
-				<artifactId>shiva-persist-ebean</artifactId>
-				<version>[1.1,1.2)</version>
-			</dependency>
-
-		</dependencies>
-	</dependencyManagement>
 
 	<issueManagement>
 		<system>github</system>
