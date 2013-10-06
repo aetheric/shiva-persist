@@ -1,42 +1,13 @@
 package nz.co.aetheric.shiva.persist.ebean;
 
-import java.util.List;
+import com.avaje.ebean.ExpressionList;
 import nz.co.aetheric.shiva.persist.api.Query;
-import nz.co.aetheric.shiva.persist.api.PaginatedResultList;
 
-public abstract class EbeanQuery<ResultType>
-		extends Query<ResultType> {
+public class EbeanQuery<ResultType>
+		extends Query<ResultType, ExpressionList<ResultType>> {
 
-	protected ExpressionList<ResultType> expressionList;
-
-	public ResultType getResult() {
-		return expressionList.findUnique();
-	}
-
-	public ResultType getFirstResult() {
-		return expressionList
-				.setMaxRows(1)
-				.findUnique();
-	}
-
-	public List<ResultType> getResultList() {
-		return expressionList.findList();
-	}
-
-	public PaginatedResultList<ResultType> getPaginatedResultList(int max, int start) {
-
-		// Start working on the row count of the un-paginated query expression.
-		FutureRowCount<ResultType> rowCount = expressionList.findFutureRowCount();
-
-		// Paginate the query expression and retrieve the results.
-		List<ResultType> results = expressionList
-				.setMaxRows(max)
-				.setFirstRow(start)
-				.findList();
-
-		// Wrap both bits of information in a useful package.
-		return new PaginatedResultList(results, total.get());
-
+	protected EbeanQuery(Class<ResultType> resultType, ExpressionList<ResultType> context) {
+		super(resultType, context);
 	}
 
 }
