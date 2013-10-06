@@ -8,27 +8,15 @@ import nz.co.aetheric.shiva.persist.api.types.Identifiable;
  * Filters a query to make sure all the ids are within a particular inclusive range.
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-public abstract class IdNumberBetweenFilter<
+public interface IdNumberBetweenFilter<
 		QueryType extends Query<? extends Identifiable<IdType>, ?>,
 		IdType extends Number
 >
-		implements QueryFilter<QueryType> {
+		extends QueryFilter<QueryType> {
 
-	private final IdType minimum;
-	private final IdType maximum;
+	public IdType getMinimum();
 
-	public IdNumberBetweenFilter(IdType minimum, IdType maximum) {
-		this.minimum = minimum;
-		this.maximum = maximum;
-	}
-
-	public IdType getMinimum() {
-		return minimum;
-	}
-
-	public IdType getMaximum() {
-		return maximum;
-	}
+	public IdType getMaximum();
 
 	@Override
 	public abstract void apply(QueryType query);

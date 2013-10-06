@@ -8,22 +8,14 @@ import nz.co.aetheric.shiva.persist.api.types.Identifiable;
  * Filters a query on whether the provided string matches the result ids.
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-public abstract class IdStringMatchesFilter<QueryType extends Query<? extends Identifiable<String>, ?>>
-		implements QueryFilter<QueryType> {
+public interface IdStringMatchesFilter<QueryType extends Query<? extends Identifiable<String>, ?>>
+		extends QueryFilter<QueryType> {
 
-	private final String match;
-
-	protected IdStringMatchesFilter(String match) {
-		this.match = match;
-	}
-
-	public String getMatch() {
-		return match;
-	}
+	public String getMatch();
 
 	@Override
-	public abstract void apply(QueryType query);
+	public void apply(QueryType query);
 
-	public abstract void apply(QueryType query, String match);
+	public void apply(QueryType query, String match);
 
 }

@@ -13,33 +13,19 @@ import java.util.Collections;
  * Filters an Identifiable entity query on whether the id is within a particular collection.
  * <p>Author: <a href="http://gplus.to/tzrlk">Peter Cummuskey</a></p>
  */
-public abstract class IdMatchesFilter<
+public interface IdMatchesFilter<
 		QueryType extends Query<? extends Identifiable<IdType>, ?>,
 		IdType extends Serializable
 >
-		implements QueryFilter<QueryType> {
+		extends QueryFilter<QueryType> {
 
-	private final Collection<IdType> ids;
-
-	protected IdMatchesFilter(Collection<IdType> ids) {
-		this.ids = Collections.unmodifiableCollection(ids);
-	}
-
-	protected IdMatchesFilter(IdType... ids) {
-		this(Arrays.asList(ids));
-	}
-
-	public Collection<IdType> getIds() {
-		return ids;
-	}
+	public Collection<IdType> getIds();
 
 	@Override
-	public abstract void apply(QueryType query);
+	public void apply(QueryType query);
 
-	public abstract void apply(QueryType query, Collection<IdType> ids);
+	public void apply(QueryType query, Collection<IdType> ids);
 
-	public void apply(QueryType query, IdType... ids) {
-		apply(query, Arrays.asList(ids));
-	}
+	public void apply(QueryType query, IdType... ids);
 
 }
