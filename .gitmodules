@@ -1,0 +1,9 @@
+[submodule "shiva-persist-parent"]
+	path = shiva-persist-parent
+	url = git@github.com:aetheric/shiva-persist.git
+[submodule "shiva-persist-api"]
+	path = shiva-persist-api
+	url = git@github.com:aetheric/shiva-persist.git
+[submodule "shiva-persist-ebean"]
+	path = shiva-persist-ebean
+	url = git@github.com:aetheric/shiva-persist.git
