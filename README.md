@@ -1,4 +1,4 @@
-# Shiva Persistence
+# Shiva Persistence [![Build Status](https://aetheric.ci.cloudbees.com/buildStatus/icon?job=shiva-persist)](https://aetheric.ci.cloudbees.com/job/shiva-persist/)
 
 This project aims to provide a useful framework for assisting with keeping persistence code neatly within a singular
 module, thereby removing any and all database library dependencies from the rest of the project modules. The rest of an
